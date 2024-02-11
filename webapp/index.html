@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang=""en>
+<head>
+    <meta charset="UTF=8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>WaterSense</title>
+    <link href="assets/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/code.js"></script>
+
+    
+</head>
+<body  id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><span class="text-primary">WaterSense</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ms-auto mb-2 mb-lg-0">  
+          <li class="nav-item"><a class="nav-link" href="#details">Detailed Result</a></li>
+          <li class="nav-item"><a class="nav-link" href="#history">View History</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section>
+    
+    <div class="header">
+
+      <!--Content before waves-->
+      <div class="inner-header flex">
+      <h1>Your Water is:</h1>
+      <h3>{{Insert Result Here!!}}</h3>
+      </div>
+
+      <!--Waves Container-->
+      <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+      <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+      </svg>
+      </div>
+      <!--Waves end--> 
+  </div >
+  </section>>
+
+  <div id="details" container="flui">
+  <section class="about section-padding prelative" data-scroll-index='1'>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="sectioner-header">
+            <h3>Here's a More Detailed Result!</h3>
+          </div>
+          <div class="section-content text-center">
+            <div class="row">
+              <div class="col-md-4 grid-item">
+                 <!--Lead Test--> 
+                <h3>Lead Test</h3>
+                <h4>{{Lead_test_result}}</h4>
+              </div>
+               <!--Nitrate Test--> 
+              <div class="col-md-4 grid-item">
+                <h3>Nitrate Test</h3>
+                <h4>{{nitrate_test_result}}</h4>
+              </div>
+               <!--Color Test--> 
+              <div class="col-md-4 grid-item">
+                <h3>Color Test</h3>
+                <h4>{{color_test_result}}</h4>
+              </div>
+               <!--Turbidity Test--> 
+              <div class="col-md-4 grid-item">
+                <h3>Turbidity Test</h3>
+                <h4>{{turbidity_test_result}}</h4>
+              </div>
+               <!--pH Test--> 
+              <div class="col-md-4 grid-item">
+                <h3>pH Test</h3>
+                <h4>{{ph_test_result}}</h4>
+              </div>
+               <!--Total Dissolved Solids Test--> 
+              <div class="col-md-4 grid-item">
+                <h3>Total Dissolved Solids</h3>
+                <h4>{{total_dissolved_test_result}}</h4>
+              </div>
+               <!--Residual Chlorine Test--> 
+              <div class="col-md-4 grid-item">
+                <h3>Residual Chlorine</h3>
+                <h4>{{residual_test_result}}</h4>
+              </div>            
+               <!--Coliform Test--> 
+              <div class="col-md-4 grid-item center-bottom">
+                <h3>Coliform test</h3>
+                <h4>{{coliform_test_result}}</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+  <div id="history">
+  <section>
+    <div class="historysection" id="#history">
+    <h1 class="HistoryHeaderTitle">History</h1>
+                    <table class="table table-striped-columns">
+                      <thead">
+                          <tr>
+                              <th>Test No.</th>
+                              <th>Date. </th>
+                              <th>Lead Result</th>
+                              <th>Nitrate Result</th>
+                              <th>Color Result</th>
+                              <th>Turbidity Result</th>
+                              <th>pH Result</th>
+                              <th>Total Dissolved Solids Result</th>
+                              <th>Residual Chlorine Result</th>
+                              <th>Coliform Test Result</th>
+                              <th>Final Result</th>
+                              <th>Date</th>
+  
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>1</td>
+                              <td>test</td>
+                              <td>test</td>
+                              <td>test</td>
+                              <td>test</td>
+                              <td>test</td>
+                              <td>test</td>
+                              <td>test</td>
+                              <td>test</td>
+                              <td>test</td>
+                              <td>passed</td>
+                              <td>test</td>
+
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>passed</td>
+                            <td>test</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>passed</td>
+                            <td>test</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>passed</td>
+                            <td>test</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>passed</td>
+                            <td>test</td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>passed</td>
+                            <td>test</td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>passed</td>
+                            <td>test</td>
+                          </tr>
+                          <tr>
+                            <td>8</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>passed</td>
+                            <td>test</td>
+                          </tr>
+                          <tr>
+                            <td>9</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>passed</td>
+                            <td>test</td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>passed</td>
+                            <td>test</td>
+                          </tr>
+                          <tr>
+                            <td>11</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>passed</td>
+                            <td>test</td>
+                          </tr>
+                      </tbody>
+                  </table>
+    <button class="button">+ Add to Test History</button>
+  </div>
+  </section>
+  </div>
+  <div id="about"> 
+  <section> 
+    <div class="drip"></div>
+    <div class="footer">
+     <div class="AboutUs flex">
+     <h1 class="text-center">About WaterSense</h1>
+     <p class="text-center">WaterSense System is a device and webpage application for automating the process of water analysis of deep well groundwater by implementing computer vision and robotics. The system’s job is that from the water sample, it shall analyze the water quality factors such as pH level, Manganese, hydrogen sulfide, nitrate, nitrite, alkalinity, and hardness level content of the sample that will based its results from the color coded chart. The process will only take approximately 5 minutes. Moreover, the system will also test the possibilities of bacterial contamination in the said water sample. The process of checking for coliform bacteria will take more than or equal to 48 hours or less than 72 hours.</p>
+    </div>
+    <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+      <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+      </svg>
+      </div>
+  </div>
+
+  </section>
+ </div>
+   <script src="assets/bootstrap.min.js"></script>
+</body>
+</html>

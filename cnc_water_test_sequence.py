@@ -31,9 +31,9 @@ gripper = Gripper(5,6,13,26)
 def resetCNC():
     try:
         while True:
-            xPos = False if GPIO.input(xResetSensor) == 1 else True
-            yPos = False if GPIO.input(yResetSensor) == 1 else True
-            aPos = False if GPIO.input(aResetSensor) == 1 else True
+            xPos = False if GPIO.input(xResetSensor) == 0 else True
+            yPos = False if GPIO.input(yResetSensor) == 0 else True
+            aPos = False if GPIO.input(aResetSensor) == 0 else True
             
             if xPos and yPos and aPos:
                 print(f"cnc at zero zero")
@@ -64,15 +64,15 @@ def disposePaperStrip():
 
 
 resetCNC()
-pickUpStrip()
-moveToWater()
-dipInBottle()
-removeStripFromCup()
-alignToCamera()
-time.sleep(1)
-cam.capture()
-time.sleep(1)
-disposePaperStrip()
+# pickUpStrip()
+# moveToWater()
+# dipInBottle()
+# removeStripFromCup()
+# alignToCamera()
+# time.sleep(1)
+# cam.capture()
+# time.sleep(1)
+# disposePaperStrip()
 
 
 def set_servo_angle(angle):

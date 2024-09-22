@@ -96,6 +96,5 @@ except KeyboardInterrupt:
 finally:
     GPIO.output(servo_t_pin, GPIO.LOW)
     pwm.stop()
-    GPIO.cleanup()
-print(f"ph:6.5, hardness:100, hydrogenSulfide:0, iron:0, copper:0, lead:0, manganese:0, chlorine:0.5, mercury:0, nitrate:1, sulfate:200, zinc:5, fluoride:0, sodiumChloride:0, totalAlkalinity:240, TDS:8, turbidity: 0")    
+    GPIO.cleanup()  
 # img_proc.analyze_strip('/home/r2dc/watersense/paperstrip.jpg')
